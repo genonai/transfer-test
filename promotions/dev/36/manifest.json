@@ -1,0 +1,47 @@
+{
+ "promotion_id": 36,
+ "source_env": "dev",
+ "source_workflow_id": 2875,
+ "source_workflow_name": "이관 테스트용 워크플로우",
+ "target_workflow_name": "이관 테스트용 워크플로우",
+ "artifact_checksum": "f846e0b0bd1254819797ec0c7524f9c399a9925c12e871a23d0e97bbe758327a",
+ "reason": "이관 테스트 (flowise 내부 각종 파라미터들)",
+ "requested_at": "2026-08-13 17:04:27",
+ "resource_mapping": null,
+ "resource_refs": {
+  "serving": [
+   "1048",
+   "913"
+  ],
+  "vdb": [],
+  "mcp": [],
+  "service_router": [],
+  "credential": [],
+  "serving_revision": [],
+  "weaviate_index": []
+ },
+ "execution_spec": {
+  "docker_image": "llmops-workflow-api:latest",
+  "instance_type": "smicro",
+  "replicas": 1,
+  "max_queue_size": 100,
+  "max_concurrency": 10,
+  "is_multi_node_enabled": false,
+  "envs": [
+   {
+    "key": "test_env",
+    "value": null,
+    "is_secret": true
+   },
+   {
+    "key": "test_env2",
+    "value": null,
+    "is_secret": true
+   }
+  ]
+ },
+ "steps_summary": {
+  "python": 1,
+  "flowise": 2
+ }
+}
